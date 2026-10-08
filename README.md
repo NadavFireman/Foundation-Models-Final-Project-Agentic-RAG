@@ -18,9 +18,14 @@
 - **Reproducible:** pinned models and data, fixed seeds, and every model call logged.
 
 ## Repository Structure
-- `Foundation_Models_Project.ipynb`: The full project notebook with the written report (Hebrew).
+- `Foundation_Models_Project.ipynb`: The full project notebook - corpus and retrieval (Part A), grounded generation (B), the two agents (C), failure taxonomy (D), LLM-as-a-Judge (E), the ablation (F), the bonus retrieval comparison and the final agent profile, with code, outputs and analysis.
 - `Project_AgenticRAG.pdf`: Original course project specification.
-- `outputs/`: Results, the full log of model calls, the corpus and all figures.
+- `outputs/`: Everything produced by the saved run.
+  - `project_results.json`: All metrics, configurations and pinned model revisions.
+  - `calls.jsonl`: Log of all 1,148 model calls (request, output, timing), replayed on rerun.
+  - `corpus_aiact.jsonl`: The 126-unit EU AI Act corpus as used in the project.
+  - `run_date.txt`: The fixed date returned by the agent's `today` tool, for reproducibility.
+  - `figures/`: All 37 plots from the notebook, prefixed by part (`a_` to `f_`, `bonus_`, `synthesis_`).
 - `requirements.txt`: Library versions.
 
 ## Dataset
